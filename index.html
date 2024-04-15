@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <div id="app">
+    <div class="header">
+      <h1>My Website</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="2.html">Project</a>
+      <a href="3.html">Travel</a>
+      <a href="#" style="float:right">Link</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING </h2>
+          <h5>Title description, Dec 7, xxx</h5>
+          <div class="fakeimg" style="height:200px;">
+            <img src="1.jpg" alt="">
+          </div>
+          <p>Some text..</p>
+          <p>Some text..</p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING card</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height:200px;">
+          <img src="2.jpg" alt="">
+          </div>
+          <p>Some text..</p>
+          <p>Some text..</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height:100px;">
+          <img src="3.jpg" alt="">
+          </div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg">
+          <img src="project1.jpg" alt="">
+          </div>
+          <div class="fakeimg">
+          <img src="project2.jpg" alt="">
+          </div>
+          <div class="fakeimg">
+          <img src="project3.jpg" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Mia Website</h2>
+    </div>
+
+  </div>
+  <script>
+    const header = document.querySelector('.header h1');
+    const topNav = document.querySelectorAll('.topnav a');
+
+    for (let i = 0; i < topNav.length; i++) {
+      topNav[i].addEventListener('click', function () {
+        header.innerHTML = topNav[i].innerText;
+      });
+    }
+
+  </script>
+</body>
+
+</html>
